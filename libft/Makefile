@@ -55,7 +55,7 @@ OBJS_BONUS = $(SRCS_BONUS:.c=.o)
 
 all: $(NAME)
 
-$(NAME).c: $(OBJS)
+$(NAME).a: $(OBJS)
 	ar $(ARFLAGS) $(NAME).a $(OBJS)
 
 %.o: %.c $(INC)
