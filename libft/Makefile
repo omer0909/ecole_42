@@ -53,7 +53,7 @@ SRCS_BONUS	= ft_lstnew.c \
 OBJS = $(SRCS:.c=.o)
 OBJS_BONUS = $(SRCS_BONUS:.c=.o)
 
-all: $(NAME)
+all: $(NAME).a
 
 $(NAME).a: $(OBJS)
 	ar $(ARFLAGS) $(NAME).a $(OBJS)
