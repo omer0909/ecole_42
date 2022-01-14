@@ -67,9 +67,12 @@ clean:
 fclean: clean
 	$(RM) $(NAME).a
 
+norm:
+	@norminette *.[ch] | grep ': OK!' -v || printf '\nHepsi doğru!\n\n'
+
 bonus: $(OBJS) $(OBJS_BONUS)
 	ar $(ARFLAGS) $(NAME).a $(OBJS) $(OBJS_BONUS)
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re norm
