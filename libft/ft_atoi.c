@@ -12,22 +12,13 @@
 
 #include "libft.h"
 
-int	ft_cntrl(int nptr)
-{
-	int	a;
-	int	b;
-
-	a = (nptr == '\n' || nptr == '\t' || nptr == '\r');
-	b = (nptr == '\v' || nptr == '\f' || nptr == ' ');
-	return (a || b);
-}
-
 int	ft_atoi(const char *nptr)
 {
 	long	result;
 	int		a;
 
-	while (ft_cntrl(*nptr))
+	while (*nptr == '\n' || *nptr == '\t' || *nptr == '\r' \
+	|| *nptr == '\v' || *nptr == '\f' || *nptr == ' ')
 		nptr++;
 	a = *nptr == '-';
 	nptr += (a || *nptr == '+');

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	is_char(char c, const char *set)
+static int	is_char(char c, const char *set)
 {
 	while (*set != '\0')
 		if (c == *set++)
