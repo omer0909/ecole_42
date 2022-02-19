@@ -71,6 +71,9 @@ fclean: clean
 norm:
 	@norminette *.[ch] | grep ': OK!' -v || printf '\nHepsi doğru!\n\n'
 
+watch:
+	@while :; do ABC=$$(make 2>&1); clear; echo $$ABC; sleep 0.5; done
+
 re: fclean all
 
-.PHONY: all clean fclean re norm
+.PHONY: all clean fclean re norm watch
