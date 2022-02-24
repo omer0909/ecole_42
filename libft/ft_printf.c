@@ -6,12 +6,12 @@
 /*   By: ooz <ozomerfaruk009@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 16:34:54 by ooz               #+#    #+#             */
-/*   Updated: 2022/02/17 12:29:27 by ooz              ###   ########.fr       */
+/*   Updated: 2022/02/20 17:16:04 by ooz              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_printf_utils.c"
+#include "ft_printf.h"
 
 static void	ft_putunbr(unsigned int n, int *x)
 {
