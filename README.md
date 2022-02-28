@@ -6,3 +6,6 @@
 <br><br>
 ##FT_PRINTF##<br>
 ![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_101.png)
+<br><br>
+##MINITALK##<br>
+![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_125.png)
