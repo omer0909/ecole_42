@@ -25,7 +25,6 @@ void	ft_clear(t_data *data)
 
 int	close_app(t_data *data)
 {
-	mlx_loop_end(data->mlx);
 	free(data->vertex);
 	free(data->vertex2d);
 	free(data->lines);
