@@ -6,7 +6,7 @@
 /*   By: ooz <ozomerfaruk009@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/20 02:25:13 by ooz               #+#    #+#             */
-/*   Updated: 2022/03/16 00:05:00 by ooz              ###   ########.fr       */
+/*   Updated: 2022/04/01 14:24:19 by ooz              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ int	close_app(t_data *data)
 		mlx_destroy_image(data->mlx, data->img.img);
 	if (data->mlx_win)
 		mlx_destroy_window(data->mlx, data->mlx_win);
-	free(data->mlx);
 	exit (0);
 }
 

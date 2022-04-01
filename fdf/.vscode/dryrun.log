@@ -1,0 +1,14 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/ooz/ecole_42/fdf'
+gcc -Wall -Wextra -Werror -I minilibx_macos -I libft   -c -o main.o main.c
+gcc -Wall -Wextra -Werror -I minilibx_macos -I libft   -c -o read_file.o read_file.c
+gcc -Wall -Wextra -Werror -I minilibx_macos -I libft   -c -o world_to_screen.o world_to_screen.c
+gcc -Wall -Wextra -Werror -I minilibx_macos -I libft   -c -o world_to_screen_b.o world_to_screen_b.c
+gcc -Wall -Wextra -Werror -I minilibx_macos -I libft   -c -o get_map.o get_map.c
+gcc -Wall -Wextra -Werror -I minilibx_macos -I libft   -c -o ft_utils.o ft_utils.c
+make -C libft
+make -C minilibx_macos
+gcc -o fdf main.o read_file.o world_to_screen.o world_to_screen_b.o get_map.o ft_utils.o libft/libft.a -I minilibx_macos -I libft -Wall -Wextra -Werror -I minilibx_macos -I libft -framework OpenGL -framework AppKit minilibx_macos/libmlx.a
+ 
+make: Leaving directory `/Users/ooz/ecole_42/fdf'
+ 
