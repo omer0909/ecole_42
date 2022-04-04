@@ -43,4 +43,4 @@ texture: texture.c
 norm:
 	@norminette *.[ch] libft/*.[ch] | grep ': OK!' -v || printf '\nAll True!\n\n'
 
-.PHONY: all clean fclean re norm texture
+.PHONY: all clean fclean re norm

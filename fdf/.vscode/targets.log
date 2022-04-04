@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Fri Apr  1 14:24:07 2022
+# Make data base, printed on Mon Apr  4 11:57:33 2022
 
 # Variables
 
@@ -29,7 +29,7 @@ VSCODE_LOG_NATIVE = false
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/ooz/ecole_42/fdf
+CURDIR := /Users/ooz/Desktop/ecole_42/fdf
 # makefile
 SHELL = /bin/sh
 # environment
@@ -47,13 +47,13 @@ VSCODE_NODE_CACHED_DATA_DIR = /Users/ooz/Library/Application Support/Code/Cached
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cbb80032tt/T/vscode-ipc-d3fc348e-425c-4899-92a6-632dab589a7c.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cbb80032tt/T/vscode-ipc-c6ba6773-f9d8-439b-a230-bbed194dfb40.sock
 # environment
 VSCODE_CWD = /
 # environment
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Apple/usr/bin
 # environment
-LaunchInstanceID = F31F750E-4F12-4A3C-BC1F-322FF3797E5B
+LaunchInstanceID = D80AC9C8-3950-4DBF-97D6-B6D52395C8BB
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -61,13 +61,13 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.8MRvz0hidN/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.PRvwG6T5Tw/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /Users/ooz/ecole_42/fdf
+PWD = /Users/ooz/Desktop/ecole_42/fdf
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -121,7 +121,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000002.Electron
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000001.Electron
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -139,7 +139,7 @@ MLX_FLAGS = -framework OpenGL -framework AppKit $(MLX)/libmlx.a
 # environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186b0
+SECURITYSESSIONID = 186a8
 # automatic
 ^F = $(notdir $^)
 # default
@@ -151,7 +151,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3476
+VSCODE_PID = 29205
 # variable set hash-table stats:
 # Load=70/1024=7%, Rehash=0, Collisions=3/101=3%
 
@@ -161,7 +161,7 @@ VSCODE_PID = 3476
 
 # Directories
 
-# . (device 16777225, inode 837708): 19 files, 1 impossibilities.
+# . (device 16777225, inode 852025): 19 files, 1 impossibilities.
 
 # 19 files, 1 impossibilities in 1 directories.
 
@@ -185,7 +185,7 @@ all: fdf
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-.PHONY: all clean fclean re norm texture
+.PHONY: all clean fclean re norm
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -205,7 +205,7 @@ get_map.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-01 14:23:55
+#  Last modified 2022-04-04 11:56:37
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -235,9 +235,8 @@ fclean:
 	
 
 texture: texture.c
-#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 39):
 	make -C libft
@@ -316,7 +315,7 @@ fdf: main.o read_file.o world_to_screen.o world_to_screen_b.o get_map.o ft_utils
 	
 
 # files hash-table stats:
-# Load=18/1024=2%, Rehash=0, Collisions=0/51=0%
+# Load=18/1024=2%, Rehash=0, Collisions=0/50=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -328,9 +327,8 @@ fdf: main.o read_file.o world_to_screen.o world_to_screen_b.o get_map.o ft_utils
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
+# Finished Make data base on Mon Apr  4 11:57:33 2022
+
  
 make: *** No rule to make target `main.o', needed by `fdf'.  Stop.
 
-# Finished Make data base on Fri Apr  1 14:24:07 2022
-
- 

@@ -6,7 +6,7 @@
 /*   By: ooz <ozomerfaruk009@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 23:23:23 by ooz               #+#    #+#             */
-/*   Updated: 2022/03/01 23:49:28 by ooz              ###   ########.fr       */
+/*   Updated: 2022/04/04 12:00:00 by ooz              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	main(int argc, char **argv)
 	int			y;
 
 	if (argc != 3)
-		return (0);
+		return (!ft_printf("hatalı argüman\nörnek: ./texture file.xpm 150\n"));
 	d.value = 100.0f / ft_atoi(argv[2]);
 	d.mlx = mlx_init();
 	d.img = mlx_xpm_file_to_image(d.mlx, argv[1], &d.width, &d.height);
