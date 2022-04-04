@@ -48,6 +48,5 @@ int	main(int argc, char **argv)
 		++y;
 	}
 	mlx_destroy_image(d.mlx, d.img);
-	free(d.mlx);
 	return (0);
 }
