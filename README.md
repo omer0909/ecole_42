@@ -1,6 +1,4 @@
-<div height="60" width="60" >
-
-
+<div style="width:60px ; height:60px" >
 ##LIBFT##<br>
 ![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_125.png)
 <br><br>
