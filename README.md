@@ -1,4 +1,4 @@
-<div style="height=20px;with=20px">
+<div style="height:20px; with:20px">
 ##LIBFT##<br>
 ![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_125.png)
 <br><br>
