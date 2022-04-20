@@ -1,4 +1,4 @@
-<img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
+<div height="60" width="60" >
 
 
 ##LIBFT##<br>
@@ -25,3 +25,4 @@
 <br><br>
 ##MINISHELL##<br>
 ![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_100.png)
+<div>
