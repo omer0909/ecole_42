@@ -1,4 +1,4 @@
-##LIBFT##<br>
+##LIBFT##
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
 <br><br>
 ##GET_NEXT_LINE##<br>
