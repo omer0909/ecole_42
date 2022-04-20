@@ -16,3 +16,9 @@
 ##FDF##<br>
 ![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_125.png)<br>
 ![renderResult](https://github.com/omer0909/ecole_42/blob/master/fdf/view.png)
+<br><br>
+##PHILOSOPHERS##<br>
+![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_100.png)
+<br><br>
+##MINISHELL##<br>
+![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_100.png)
