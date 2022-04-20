@@ -15,8 +15,7 @@
 <br><br>
 ##FDF##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
-<img src="https://github.com/omer0909/ecole_42/blob/master/fdf/view.png" height="200" width="200" >
-![renderResult](https://github.com/omer0909/ecole_42/blob/master/fdf/view.png)
+<img src="https://github.com/omer0909/ecole_42/blob/master/fdf/view.png" height="400" width="500" >
 <br><br>
 ##PHILOSOPHERS##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_100.png" height="60" width="60" >
