@@ -1,14 +1,14 @@
+<img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
 ##LIBFT##
-<img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
 <br><br>
-##GET_NEXT_LINE##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
+##GET_NEXT_LINE##
 <br><br>
-##FT_PRINTF##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_101.png" height="60" width="60" >
+##FT_PRINTF##
 <br><br>
-##MINITALK##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
+##MINITALK##
 <br><br>
 ##PUSH_SWAP##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_84.png" height="60" width="60" >
