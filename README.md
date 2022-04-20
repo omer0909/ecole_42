@@ -1,4 +1,3 @@
-<div style="width:60px ; height:60px" >
 ##LIBFT##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
 <br><br>
