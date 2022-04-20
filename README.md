@@ -1,9 +1,9 @@
 <div style="width:60px ; height:60px" >
 ##LIBFT##<br>
-![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_125.png "asd")
+<img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
 <br><br>
 ##GET_NEXT_LINE##<br>
-![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_125.png)
+<img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
 <br><br>
 ##FT_PRINTF##<br>
 ![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_101.png)
@@ -23,4 +23,3 @@
 <br><br>
 ##MINISHELL##<br>
 ![renderResult](https://github.com/omer0909/ecole_42/blob/master/files/result_100.png)
-<div>
