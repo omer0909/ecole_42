@@ -1,24 +1,24 @@
-##LIBFT##
+##LIBFT##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
 <br>
-##GET_NEXT_LINE##
+##GET_NEXT_LINE##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
 <br>
-##FT_PRINTF##
+##FT_PRINTF##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_101.png" height="60" width="60" >
 <br>
-##MINITALK##
+##MINITALK##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
 <br>
-##PUSH_SWAP##
+##PUSH_SWAP##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_84.png" height="60" width="60" >
 <br>
-##FDF##
+##FDF##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_125.png" height="60" width="60" >
 <img src="https://github.com/omer0909/ecole_42/blob/master/fdf/view.png" height="400" width="500" >
 <br>
-##PHILOSOPHERS##
+##PHILOSOPHERS##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_100.png" height="60" width="60" >
 <br>
-##MINISHELL##
+##MINISHELL##<br>
 <img src="https://github.com/omer0909/ecole_42/blob/master/files/result_100.png" height="60" width="60" >
