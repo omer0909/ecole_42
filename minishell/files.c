@@ -79,7 +79,7 @@ int	ft_heredoc(char *command, int i)
 	while (1)
 	{
 		input = readline("> ");
-		if (!ft_strncmp(input, name, ft_strlen(name) + 1))
+		if (!input || !ft_strncmp(input, name, ft_strlen(name) + 1))
 			break ;
 		ft_putstr_fd(input, fd[1]);
 		ft_putstr_fd("\n", fd[1]);

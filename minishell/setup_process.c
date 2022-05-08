@@ -81,7 +81,7 @@ void	ft_setup_process(char **command)
 {
 	t_process	ps;
 
-	ps.tmp_fd = 0;
+	ps.tmp_fd = dup(0);
 	ps.i = 0;
 	g_data.pid_list = NULL;
 	while (command[ps.i] != NULL)
@@ -92,15 +92,13 @@ void	ft_setup_process(char **command)
 			add_pid_list(&g_data.pid_list, ft_create_process(command[ps.i++],
 					(int []){ps.tmp_fd, ps.fd[1]}, ps.fd[0]));
 			close(ps.fd[1]);
-			if (ps.tmp_fd != 0)
-				close(ps.tmp_fd);
+			close(ps.tmp_fd);
 			ps.tmp_fd = ps.fd[0];
 			continue ;
 		}
 		add_pid_list(&g_data.pid_list, ft_create_process(command[ps.i++],
 				(int []){ps.tmp_fd, 1}, -1));
-		if (ps.tmp_fd != 0)
-			close(ps.tmp_fd);
+		close(ps.tmp_fd);
 	}
 	lock_signal(command);
 }
