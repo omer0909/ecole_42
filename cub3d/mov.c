@@ -35,17 +35,17 @@ void	ft_move(t_data *data, t_vector2f move)
 
 int	ft_event_up(int key, t_data *data)
 {
-	if (key == 13)
+	if (key == KEY_W)
 		data->keys.w = 1;
-	else if (key == 1)
+	else if (key == KEY_S)
 		data->keys.s = 1;
-	else if (key == 0)
+	else if (key == KEY_A)
 		data->keys.a = 1;
-	else if (key == 2)
+	else if (key == KEY_D)
 		data->keys.d = 1;
-	else if (key == 123)
+	else if (key == KEY_LEFT)
 		data->keys.left = 1;
-	else if (key == 124)
+	else if (key == KEY_RIGHT)
 		data->keys.right = 1;
 	else if (key == 53)
 		exit(0);
@@ -54,17 +54,18 @@ int	ft_event_up(int key, t_data *data)
 
 int	ft_event_down(int key, t_data *data)
 {
-	if (key == 13)
+	ft_printf("%iaaa\n", key);
+	if (key == KEY_W)
 		data->keys.w = 0;
-	else if (key == 1)
+	else if (key == KEY_S)
 		data->keys.s = 0;
-	else if (key == 0)
+	else if (key == KEY_A)
 		data->keys.a = 0;
-	else if (key == 2)
+	else if (key == KEY_D)
 		data->keys.d = 0;
-	else if (key == 123)
+	else if (key == KEY_LEFT)
 		data->keys.left = 0;
-	else if (key == 124)
+	else if (key == KEY_RIGHT)
 		data->keys.right = 0;
 	return (0);
 }

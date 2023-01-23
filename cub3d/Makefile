@@ -1,6 +1,6 @@
 NAME= cub3D
-CC= gcc
-CFLAGS= -Wall -Wextra -Werror $(addprefix -I , $(IDIR)) -g
+CC= clang
+CFLAGS= -Wall -Wextra -Werror $(addprefix -I , $(IDIR)) -Ofast
 SRC= main.c get_file.c your_map.c draw.c look.c mov.c render.c map.c map_u.c tool.c
 LIBFT= libft/libft.a
 IDIR= libft ./ $(MLX)
@@ -9,7 +9,7 @@ OBJ= $(SRC:.c=.o)
 ifeq ($(shell uname -s), Linux)
 	MLX = minilibx_linux
 	MLX_LIB = $(MLX)/libmlx_Linux.a
-	MLX_FLAGS = -lXext -lX11 -lm -lz -g
+	MLX_FLAGS = -lXext -lX11 -lm -lz -DLINUX
 else
 	MLX = minilibx_macos
 	MLX_LIB = $(MLX)/libmlx.a
@@ -19,7 +19,7 @@ endif
 all: $(NAME)
 
 $(NAME): $(LIBFT) $(MLX_LIB) $(OBJ)
-	$(CC) $(CFLAGS) $(MLX_FLAGS) $(MLX_LIB) $^ -o $(NAME) $(LIBFT) -g -framework OpenGL -framework AppKit
+	$(CC) $(CFLAGS) $^ -o $(NAME) $(LIBFT) $(MLX_LIB) $(MLX_FLAGS) 
 
 $(LIBFT):
 	make -C libft

@@ -55,9 +55,6 @@ void	image_control(t_data *data)
 
 void	get_file_args(t_map *map, t_data *data)
 {
-	int	i;
-
-	i = 0;
 	data->imgs[0].img = mlx_xpm_file_to_image(data->mlx, map->no,
 			&data->imgs[0].width, &data->imgs[0].height);
 	data->imgs[1].img = mlx_xpm_file_to_image(data->mlx, map->so,

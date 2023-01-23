@@ -9,8 +9,8 @@ ft_strcmp.c ft_isspace.c
 
 _OBJ = $(_SRC:.c=.o)
 
-CC = gcc
-FLAGS = -Wall -Wextra -Werror -g
+CC = clang
+FLAGS = -Wall -Wextra -Werror -Ofast
 
 INC = $(IDIR)
 

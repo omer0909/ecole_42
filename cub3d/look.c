@@ -49,7 +49,7 @@ t_found	look_horizontal(t_data *data, float f_slope, int add)
 	{
 		y = f_slope * (i + (add < 0)) + f_add;
 		if (y < 0 || (int)y >= data->y_size || i < 0 || i >= data->x_size)
-			return ((t_found){0x7FFFFFFF, 0});
+			return ((t_found){(float)0x7FFFFFFF, 0});
 		if (data->map[(int)y][i] == '1')
 		{
 			return ((t_found){get_distance((t_vector2f){i + (add < 0), y},
@@ -72,7 +72,7 @@ t_found	look_vertical(t_data *data, float f_slope, int add)
 	{
 		x = f_slope * (i + (add < 0)) + f_add;
 		if (x < 0 || (int)x >= data->x_size || i < 0 || i >= data->y_size)
-			return ((t_found){0x7FFFFFFF, 0});
+			return ((t_found){(float)0x7FFFFFFF, 0});
 		if (data->map[i][(int)x] == '1')
 		{
 			return ((t_found){get_distance((t_vector2f){x, i + (add < 0)},

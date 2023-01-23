@@ -25,6 +25,21 @@
 # define PI 3.14159f
 # define ANLE_TO_RADIAN 0.0174532f
 
+# ifdef LINUX
+#  define KEY_W 13
+#  define KEY_A 0
+#  define KEY_S 1
+#  define KEY_D 2
+#  define KEY_LEFT 123
+#  define KEY_RIGHT 124
+# else
+#  define KEY_W 13
+#  define KEY_A 0
+#  define KEY_S 1
+#  define KEY_D 2
+#  define KEY_LEFT 123
+#  define KEY_RIGHT 124
+# endif
 typedef struct s_image
 {
 	int		width;
