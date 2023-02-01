@@ -10,7 +10,7 @@ ft_strcmp.c ft_isspace.c
 _OBJ = $(_SRC:.c=.o)
 
 CC = clang
-FLAGS = -Wall -Wextra -Werror -Ofast
+FLAGS = -Wall -Wextra -Werror -Ofast -flto
 
 INC = $(IDIR)
 

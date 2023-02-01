@@ -20,27 +20,44 @@ void	ft_start_game(t_data *data, t_map *map)
 	ft_render(data);
 }
 
+void ft_calculate_delta_time(t_data *data)
+{
+	static clock_t	last = 0;
+	static int		first = 0;
+	clock_t			now;
+
+	now = clock();
+	if (!first)
+	{
+		first = 1;
+		last = clock();
+	}
+	data->delta_time = ((double) (now - last)) / CLOCKS_PER_SEC;
+	last = clock();
+}
+
 int	ft_update(t_data *data)
 {
 	float		speed;
 	float		look_speed;
 	t_vector2f	move;
 
-	speed = 0.1f;
-	look_speed = 0.03f;
+	speed = 5.0f;
+	look_speed = 1.5f;
+	ft_calculate_delta_time(data);
 	move = (t_vector2f){0, 0};
 	move.x += cosf(data->look) * speed
-		* (data->keys.w - data->keys.s);
+		* (data->keys.w - data->keys.s) * data->delta_time;
 	move.y += sinf(data->look) * speed
-		* (data->keys.w - data->keys.s);
+		* (data->keys.w - data->keys.s) * data->delta_time;
 	move.x += cosf(data->look + 1.570796f) * speed
-		* (data->keys.a - data->keys.d);
+		* (data->keys.a - data->keys.d) * data->delta_time;
 	move.y += sinf(data->look + 1.570796f) * speed
-		* (data->keys.a - data->keys.d);
+		* (data->keys.a - data->keys.d) * data->delta_time;
 	if (data->keys.left)
-		data->look += look_speed;
+		data->look += look_speed * data->delta_time;
 	if (data->keys.right)
-		data->look -= look_speed;
+		data->look -= look_speed * data->delta_time;
 	ft_move(data, move);
 	ft_render(data);
 	return (0);
@@ -73,8 +90,8 @@ int	main(int argc, char **argv)
 	get_data(&data, map);
 	ft_start_game(&data, map);
 	kill_map(map);
-	mlx_hook(data.mlx_win, 2, 0, ft_event_up, &data);
-	mlx_hook(data.mlx_win, 3, 0, ft_event_down, &data);
+	mlx_hook(data.mlx_win, KeyPress, KeyPressMask, &ft_event_up, &data);
+	mlx_hook(data.mlx_win, KeyRelease, KeyReleaseMask, &ft_event_down, &data);
 	mlx_loop_hook(data.mlx, ft_update, &data);
 	mlx_hook(data.mlx_win, 17, 0, func_exit, 0);
 	mlx_loop(data.mlx);

@@ -47,14 +47,13 @@ int	ft_event_up(int key, t_data *data)
 		data->keys.left = 1;
 	else if (key == KEY_RIGHT)
 		data->keys.right = 1;
-	else if (key == 53)
+	else if (key == KEY_ESC)
 		exit(0);
 	return (0);
 }
 
 int	ft_event_down(int key, t_data *data)
 {
-	ft_printf("%iaaa\n", key);
 	if (key == KEY_W)
 		data->keys.w = 0;
 	else if (key == KEY_S)

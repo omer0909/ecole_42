@@ -1,6 +1,6 @@
 NAME= cub3D
 CC= clang
-CFLAGS= -Wall -Wextra -Werror $(addprefix -I , $(IDIR)) -Ofast
+CFLAGS= -Wall -Wextra -Werror $(addprefix -I , $(IDIR)) -Ofast -flto
 SRC= main.c get_file.c your_map.c draw.c look.c mov.c render.c map.c map_u.c tool.c
 LIBFT= libft/libft.a
 IDIR= libft ./ $(MLX)
@@ -9,7 +9,8 @@ OBJ= $(SRC:.c=.o)
 ifeq ($(shell uname -s), Linux)
 	MLX = minilibx_linux
 	MLX_LIB = $(MLX)/libmlx_Linux.a
-	MLX_FLAGS = -lXext -lX11 -lm -lz -DLINUX
+	MLX_FLAGS = -lXext -lX11 -lm -lz
+	CFLAGS += -DLINUX
 else
 	MLX = minilibx_macos
 	MLX_LIB = $(MLX)/libmlx.a

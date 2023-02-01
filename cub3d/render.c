@@ -77,7 +77,7 @@ void	fill_screen(t_data *data)
 
 void	ft_render(t_data *data)
 {
-	const float	view_angle = 1.5f / 2;
+	const float	view_angle = 0.75f;
 	const float	add = view_angle / WIN_WIDTH;
 	float		angle;
 	int			index;
